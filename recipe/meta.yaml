@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/prismatic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/prismatic/prismatic_{{ version }}.tar.gz
-  sha256: 4ff32564e463811f6188c16136524e2284f959c024fa9c3b4dfa3fb5e13c0748
+  sha256: 52275120f648c28e8e58d08184a72826d177e00a00eb7480207ffc4b1fc4018f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,7 +41,7 @@ about:
   summary: Manipulate and visualize colors in a intuitive, low-dependency and functional way.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:

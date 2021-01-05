@@ -5,11 +5,9 @@ Home: https://github.com/EmilHvitfeldt/prismatic
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-prismatic-feedstock/blob/master/LICENSE.txt)
 
 Summary: Manipulate and visualize colors in a intuitive, low-dependency and functional way.
-
-
 
 Current build status
 ====================
