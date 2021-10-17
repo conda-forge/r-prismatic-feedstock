@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/prismatic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/prismatic/prismatic_{{ version }}.tar.gz
-  sha256: 52275120f648c28e8e58d08184a72826d177e00a00eb7480207ffc4b1fc4018f
+  sha256: 907be52ea63dd5a1bf4b0fb54f1e9c04967a43aa5036b5b8786350ca6008d3b8
 
 build:
   merge_build_host: true  # [win]
