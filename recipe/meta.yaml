@@ -1,6 +1,5 @@
 {% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-prismatic
@@ -13,8 +12,7 @@ source:
   sha256: babf5b7ad4c9b52921c619de66f93936755dc385b2b69c6504d87c7d5a71e261
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
